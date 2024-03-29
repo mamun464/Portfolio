@@ -1,6 +1,7 @@
 # Visit My Portfolio on this link:
 
-# This site will be live soon!
+# This site is live now!
+https://mrashid-portfolio.netlify.app/
 
 
 ## Available Scripts
