@@ -9,7 +9,7 @@ export const Data = [
     {
         id: 2,
         title: "Professor Dr. A.K.M. Muzahidul Islam",
-        designation: "Director, Center for International Affairs and Cooperation (CIAC) Professor, Department of Computer Science and Engineering",
+        designation: "Professor, Department of Computer Science and Engineering",
         institution: "United International University",
         email: "muzahid@cse.uiu.ac.bd",
     },
@@ -20,7 +20,7 @@ export const Data = [
         institution: "United International University",
         email: "suman@cse.uiu.ac.bd",
     },
-    
+
     {
         id: 4,
         title: "Khaled Hossain Ansary",

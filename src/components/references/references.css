@@ -1,8 +1,20 @@
-.references__container{
-    width: 850px;
+.references__container {
+    width: calc(100% - 20px);
+    /* Adjust the total width according to your layout */
+    margin: 0 auto;
 }
 
-.reference__card{
+.reference__card {
+    margin-right: 10px;
+    /* Adjust this value as needed */
+}
+
+.reference__card:last-child {
+    margin-right: 0;
+}
+
+
+.reference__card {
     background-color: var(--container-color);
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 1.5rem 2rem;
@@ -10,35 +22,38 @@
     min-height: 150px;
     margin-bottom: var(--mb-3);
     justify-content: flex-start;
+
+    /* Add right margin of 44px */
 }
 
-.reference__name{
+.reference__name {
     font-size: var(--h3-font-size);
     font-weight: var(--font-medium);
     margin-bottom: var(--mb-0-25);
 }
 
-.reference__desig, .reference__insti, .reference__email{
+.reference__desig,
+.reference__insti,
+.reference__email {
     font-size: var(--smaller-font-size);
 }
 
-.swiper-pagination-bullet{
+.swiper-pagination-bullet {
     background-color: #ffbb55 !important;
 }
 
-.swiper-pagination-bullet-active{
+.swiper-pagination-bullet-active {
     background-color: #ffb31c !important;
 }
 
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
 @media screen and (max-width: 992px) {
-    .references__container{
+    .references__container {
         width: initial;
     }
 
-    .reference__card{
+    .reference__card {
         padding: 1.25rem 1.5rem;
     }
 }
-  
