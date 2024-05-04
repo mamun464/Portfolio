@@ -5,6 +5,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { MdOutlineMarkEmailRead } from "react-icons/md";
 import { FaArrowRight } from "react-icons/fa6";
+import { FaFacebookMessenger } from "react-icons/fa";
 
 const Contacts = () => {
   const form = useRef();
@@ -103,7 +104,7 @@ const Contacts = () => {
             </div>
 
             <div className="contact__card" id="messengerContact">
-              <i className="bx bxl-messenger contact__card-icon"></i>
+              <i className="bx bxl-messenger contact__card-icon"><FaFacebookMessenger />  </i>
 
               <h3 className="contact__card-title">Messenger</h3>
               <span className="contact__card-data">mrashid.uiu</span>
