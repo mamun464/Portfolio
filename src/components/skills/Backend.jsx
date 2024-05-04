@@ -1,5 +1,5 @@
-import React from "react";
-
+import { FaCode } from "react-icons/fa6";
+// import { FaCode } from "react-icons/fa";
 const Backend = () => {
   return (
     <div className="skills__content">
@@ -8,7 +8,7 @@ const Backend = () => {
       <div className="skills__box">
         <div className="skills__group">
           <div className="skills__data">
-            <i class="uil uil-bolt-alt icon__box"></i>
+            <i className=" icon__box"><FaCode /></i>
 
             <div>
               <h3 className="skills__name">Python</h3>
@@ -17,7 +17,7 @@ const Backend = () => {
           </div>
 
           <div className="skills__data">
-            <i class="uil uil-bolt-alt icon__box"></i>
+            <i className="icon__box"><FaCode /></i>
 
             <div>
               <h3 className="skills__name">FastAPI</h3>
@@ -26,7 +26,7 @@ const Backend = () => {
           </div>
 
           <div className="skills__data">
-            <i class="uil uil-bolt-alt icon__box"></i>
+            <i className="icon__box"><FaCode /></i>
 
             <div>
               <h3 className="skills__name">SQLite</h3>
@@ -36,7 +36,7 @@ const Backend = () => {
         </div>
         <div className="skills__group">
           <div className="skills__data">
-            <i class="uil uil-bolt-alt icon__box"></i>
+            <i className="icon__box"><FaCode /></i>
 
             <div>
               <h3 className="skills__name">Django</h3>
@@ -45,7 +45,7 @@ const Backend = () => {
           </div>
 
           <div className="skills__data">
-            <i class="uil uil-bolt-alt icon__box"></i>
+            <i className="icon__box"><FaCode /></i>
 
             <div>
               <h3 className="skills__name">Flask</h3>
@@ -54,7 +54,7 @@ const Backend = () => {
           </div>
 
           <div className="skills__data">
-            <i class="uil uil-bolt-alt icon__box"></i>
+            <i className="icon__box"><FaCode /></i>
 
             <div>
               <h3 className="skills__name">PostgreSQL</h3>

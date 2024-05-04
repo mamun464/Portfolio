@@ -1,4 +1,4 @@
-.header{
+.header {
     width: 100%;
     position: fixed;
     top: 0;
@@ -8,7 +8,7 @@
     opacity: 0.94;
 }
 
-.nav{
+.nav {
     height: calc(var(--header-height) + 1.5rem);
     display: flex;
     align-items: center;
@@ -17,17 +17,19 @@
 }
 
 .nav__toggle,
-.nav__logo{
+.nav__logo {
     color: var(--title-color);
     font-weight: var(--font-weight);
+    width: 50px !important;
+    height: 50px !important;
 }
 
-.nav__me{
+.nav__me {
     display: flex;
     column-gap: 2rem;
 }
 
-.nav__link{
+.nav__link {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -39,16 +41,16 @@
 
 .nav__icon,
 .nav__close,
-.nav__toggle{
+.nav__toggle {
     display: none;
 }
 
 .active-link,
-.nav__link:hover{
+.nav__link:hover {
     color: #ffb31c;
 }
 
-.scroll-header{
+.scroll-header {
     box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -56,19 +58,19 @@
 /* For medium devices */
 @media screen and (max-width: 768px) {
     body {
-      margin: 0 0 var(--header-height) 0;
+        margin: 0 0 var(--header-height) 0;
     }
 
-    .header{
+    .header {
         top: inherit;
         bottom: 0;
     }
 
-    .nav{
+    .nav {
         height: var(--header-height);
     }
 
-    .nav__menu{
+    .nav__menu {
         position: fixed;
         bottom: -100%;
         left: 0;
@@ -81,21 +83,21 @@
     }
 
     /* Show Menu */
-    .show-menu{
+    .show-menu {
         bottom: 0;
     }
 
-    .nav__me{
+    .nav__me {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
     }
 
-    .nav__icon{
+    .nav__icon {
         font-size: 1.2rem;
     }
 
-    .nav__close{
+    .nav__close {
         position: absolute;
         right: 1.3rem;
         bottom: 0.5rem;
@@ -104,11 +106,11 @@
         color: var(--title-color);
     }
 
-    .nav__close:hover{
+    .nav__close:hover {
         color: var(--tittle-color-dark);
     }
 
-    .nav__toggle{
+    .nav__toggle {
         font-size: 1.1rem;
         cursor: pointer;
     }
@@ -120,24 +122,22 @@
     }
 
     .section {
-      padding: 2rem 0 4rem;
+        padding: 2rem 0 4rem;
     }
-  
+
     .section__subtitle {
-      margin-bottom: var(--mb-3);
+        margin-bottom: var(--mb-3);
     }
 }
 
-@media screen and (max-width: 576px){
-
-}
+@media screen and (max-width: 576px) {}
 
 @media screen and (max-width: 350px) {
-    .nav__menu{
+    .nav__menu {
         padding: 2rem 0.25rem 4rem;
     }
 
-    .nav__me{
+    .nav__me {
         column-gap: 0;
     }
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import { PiBracketsCurlyBold } from "react-icons/pi";
 
 const Coding = () => {
   return (
@@ -8,7 +9,7 @@ const Coding = () => {
       <div className="skills__box">
         <div className="skills__group">
           <div className="skills__data">
-            <i class="uil uil-brackets-curly icon__box"></i>
+            <i className="icon__box"><PiBracketsCurlyBold /></i>
 
             <div>
               <h3 className="skills__name">C/C++</h3>
@@ -17,7 +18,7 @@ const Coding = () => {
           </div>
 
           <div className="skills__data">
-            <i class="uil uil-brackets-curly icon__box"></i>
+            <i className="icon__box"><PiBracketsCurlyBold /></i>
 
             <div>
               <h3 className="skills__name">JavaScript</h3>
@@ -26,7 +27,7 @@ const Coding = () => {
           </div>
 
           <div className="skills__data">
-            <i class="uil uil-brackets-curly icon__box"></i>
+            <i className=" icon__box"><PiBracketsCurlyBold /></i>
 
             <div>
               <h3 className="skills__name">Java</h3>
@@ -37,7 +38,7 @@ const Coding = () => {
 
         <div className="skills__group">
           <div className="skills__data">
-            <i class="uil uil-brackets-curly icon__box"></i>
+            <i className="icon__box"><PiBracketsCurlyBold /></i>
 
             <div>
               <h3 className="skills__name">Python</h3>
@@ -46,7 +47,7 @@ const Coding = () => {
           </div>
 
           {/* <div className='skills__data'>
-                    <i class="uil uil-brackets-curly icon__box"></i>
+                    <i className="uil uil-brackets-curly icon__box"></i>
                     
                     <div>
                         <h3 className='skills__name'>JavaScript</h3>
@@ -56,7 +57,7 @@ const Coding = () => {
                 
                   
                 <div className='skills__data'>
-                    <i class="uil uil-brackets-curly icon__box"></i>
+                    <i className="uil uil-brackets-curly icon__box"></i>
                     
                     <div>
                         <h3 className='skills__name'>Java</h3>

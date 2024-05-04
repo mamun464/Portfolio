@@ -1,5 +1,10 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import { IoCodeWorking } from "react-icons/io5";
+import { FaArrowRight } from "react-icons/fa";
+import { RxCrossCircled } from "react-icons/rx";
+import { FaRegCheckCircle } from "react-icons/fa";
 import "./services.css";
+import { IoBriefcaseOutline } from "react-icons/io5";
 
 const Services = () => {
   const [toggleState, setToggleState] = useState(0);
@@ -15,7 +20,7 @@ const Services = () => {
       <div className="services__container container grid">
         <div className="services__content">
           <div>
-            <i className="uil uil-arrow services__icon"></i>
+            <i className="services__icon"><IoCodeWorking /></i>
             <h3 className="services__title">Jr. Software Engineer</h3>
             <a
               className="services__subtitle"
@@ -29,7 +34,7 @@ const Services = () => {
 
           <span className="services__button" onClick={() => toggleTab(1)}>
             View More
-            <i className="uil uil-arrow-right services__button-icon"></i>
+            <i className=" services__button-icon"><FaArrowRight /></i>
           </span>
 
           <div
@@ -41,15 +46,15 @@ const Services = () => {
           >
             <div className="services__modal-content">
               <i
-                className="uil uil-times services__modal-close"
+                className="services__modal-close"
                 onClick={() => toggleTab(0)}
-              ></i>
+              ><RxCrossCircled /></i>
 
               <h3 className="services__modal-title">
-                Software Engineer Intern
+                Software Engineer Trainee
               </h3>
               <p className="services__modal-description">
-                Currently working as a Software Engineer Trainee at{" "}
+                Worked as a Software Engineer Trainee at{" "}
                 <a
                   href="https://www.reddotdigitalit.com"
                   target="_blank"
@@ -62,38 +67,38 @@ const Services = () => {
 
               <ul className="services__modal-services grid">
                 <li className="services__modal-service">
-                  <i className="uil uil-check-circle services__modal-icon"></i>
+                  <i className=" services__modal-icon"><FaRegCheckCircle /></i>
                   <p className="services__modal-info">
-                  Django & Django REST Framework
+                    Django & Django REST Framework
                   </p>
                 </li>
 
                 <li className="services__modal-service">
-                  <i className="uil uil-check-circle services__modal-icon"></i>
+                  <i className=" services__modal-icon"><FaRegCheckCircle /></i>
                   <p className="services__modal-info">API & RESTful API</p>
                 </li>
 
                 <li className="services__modal-service">
-                  <i className="uil uil-check-circle services__modal-icon"></i>
+                  <i className=" services__modal-icon"><FaRegCheckCircle /></i>
                   <p className="services__modal-info">Object Relational Mapping (ORM)</p>
                 </li>
 
                 <li className="services__modal-service">
-                  <i className="uil uil-check-circle services__modal-icon"></i>
+                  <i className=" services__modal-icon"><FaRegCheckCircle /></i>
                   <p className="services__modal-info">
-                  Data Scraping Automation
+                    Data Scraping Automation
                   </p>
                 </li>
                 <li className="services__modal-service">
-                  <i className="uil uil-check-circle services__modal-icon"></i>
+                  <i className=" services__modal-icon"><FaRegCheckCircle /></i>
                   <p className="services__modal-info">
-                  React.js
+                    React.js
                   </p>
                 </li>
                 <li className="services__modal-service">
-                  <i className="uil uil-check-circle services__modal-icon"></i>
+                  <i className=" services__modal-icon"><FaRegCheckCircle /></i>
                   <p className="services__modal-info">
-                  JavaScript & ES-6
+                    JavaScript & ES-6
                   </p>
                 </li>
               </ul>
@@ -103,10 +108,10 @@ const Services = () => {
 
         <div className="services__content">
           <div>
-            <i className="uil uil-web-grid services__icon"></i>
+            <i className=" services__icon"><IoBriefcaseOutline /></i>
             <h3 className="services__title">
-            Project Implementation Officer
-              
+              Project Implementation Officer
+
             </h3>
             <a
               className="services__subtitle"
@@ -114,13 +119,13 @@ const Services = () => {
               target="_blank"
               rel="noopener noreferrer"
             >Technohaven Company Limited
-              
+
             </a>
           </div>
 
           <span className="services__button" onClick={() => toggleTab(2)}>
             View More
-            <i className="uil uil-arrow-right services__button-icon"></i>
+            <i className=" services__button-icon"><FaArrowRight /></i>
           </span>
 
           <div
@@ -132,13 +137,13 @@ const Services = () => {
           >
             <div className="services__modal-content">
               <i
-                className="uil uil-times services__modal-close"
+                className="services__modal-close"
                 onClick={() => toggleTab(0)}
-              ></i>
+              ><RxCrossCircled /></i>
 
               <h3 className="services__modal-title">Project Implementation Officer</h3>
               <p className="services__modal-description">
-              I was associated with the government RAJUK project which was developed & maintained by{" "}
+                I was associated with the government RAJUK project which was developed & maintained by{" "}
                 <a
                   href="https://technohaven.com/"
                   target="_blank"
@@ -150,45 +155,45 @@ const Services = () => {
               </p>
 
               <ul className="services__modal-services grid">
-              <li className="services__modal-service">
-                  <i className="uil uil-check-circle services__modal-icon"></i>
+                <li className="services__modal-service">
+                  <i className=" services__modal-icon"><FaRegCheckCircle /></i>
                   <p className="services__modal-info">
-                  System testing and issues diagnosis
+                    System testing and issues diagnosis
 
 
                   </p>
                 </li>
 
                 <li className="services__modal-service">
-                  <i className="uil uil-check-circle services__modal-icon"></i>
+                  <i className=" services__modal-icon"><FaRegCheckCircle /></i>
                   <p className="services__modal-info">
                     System Bug fixing and benchmark
 
                   </p>
                 </li>
                 <li className="services__modal-service">
-                  <i className="uil uil-check-circle services__modal-icon"></i>
+                  <i className=" services__modal-icon"><FaRegCheckCircle /></i>
                   <p className="services__modal-info">
-                  Requirements analysis of project.
+                    Requirements analysis of project.
 
                   </p>
                 </li>
 
                 <li className="services__modal-service">
-                  <i className="uil uil-check-circle services__modal-icon"></i>
+                  <i className=" services__modal-icon"><FaRegCheckCircle /></i>
                   <p className="services__modal-info">
-                  Manual Testing
+                    Manual Testing
                   </p>
                 </li>
 
                 <li className="services__modal-service">
-                  <i className="uil uil-check-circle services__modal-icon"></i>
+                  <i className=" services__modal-icon"><FaRegCheckCircle /></i>
                   <p className="services__modal-info">
                     Functional & Non-Functional Testing
                   </p>
                 </li>
 
-                
+
               </ul>
             </div>
           </div>
@@ -196,7 +201,7 @@ const Services = () => {
 
         <div className="services__content">
           <div>
-            <i className="uil uil-arrow services__icon"></i>
+            <i className="services__icon"><IoCodeWorking /></i>
             <h3 className="services__title">
               Undergraduate
               <br />
@@ -214,7 +219,7 @@ const Services = () => {
 
           <span className="services__button" onClick={() => toggleTab(3)}>
             View More
-            <i className="uil uil-arrow-right services__button-icon"></i>
+            <i className="services__button-icon"><FaArrowRight /></i>
           </span>
 
           <div
@@ -226,9 +231,9 @@ const Services = () => {
           >
             <div className="services__modal-content">
               <i
-                className="uil uil-times services__modal-close"
+                className=" services__modal-close"
                 onClick={() => toggleTab(0)}
-              ></i>
+              ><RxCrossCircled /></i>
 
               <h3 className="services__modal-title">
                 Undergraduate Teaching Assistant
@@ -246,7 +251,7 @@ const Services = () => {
 
               <ul className="services__modal-services grid">
                 <li className="services__modal-service">
-                  <i className="uil uil-check-circle services__modal-icon"></i>
+                  <i className=" services__modal-icon"><FaRegCheckCircle /></i>
                   <p className="services__modal-info">
                     I had the privilage to offer guidance to students who were
                     new to programming.
@@ -254,7 +259,7 @@ const Services = () => {
                 </li>
 
                 <li className="services__modal-service">
-                  <i className="uil uil-check-circle services__modal-icon"></i>
+                  <i className=" services__modal-icon"><FaRegCheckCircle /></i>
                   <p className="services__modal-info">
                     Explaining the concepts of C Language, conducting problem
                     solving sessions & providing assistance.
@@ -262,7 +267,7 @@ const Services = () => {
                 </li>
 
                 <li className="services__modal-service">
-                  <i className="uil uil-check-circle services__modal-icon"></i>
+                  <i className=" services__modal-icon"><FaRegCheckCircle /></i>
                   <p className="services__modal-info">
                     Teaching them the tricks of programming that helped me out
                     in my first-year of university.
@@ -292,7 +297,7 @@ const Services = () => {
 
           <span className="services__button" onClick={() => toggleTab(4)}>
             View More
-            <i className="uil uil-arrow-right services__button-icon"></i>
+            <i className=" services__button-icon"><FaArrowRight /></i>
           </span>
 
           <div
@@ -304,9 +309,9 @@ const Services = () => {
           >
             <div className="services__modal-content">
               <i
-                className="uil uil-times services__modal-close"
+                className="\ services__modal-close"
                 onClick={() => toggleTab(0)}
-              ></i>
+              ><RxCrossCircled /></i>
 
               <h3 className="services__modal-title">Graphics & UI Designer1</h3>
               <p className="services__modal-description">
@@ -320,14 +325,14 @@ const Services = () => {
 
               <ul className="services__modal-services grid">
                 <li className="services__modal-service">
-                  <i className="uil uil-check-circle services__modal-icon"></i>
+                  <i className=" services__modal-icon"><FaRegCheckCircle /></i>
                   <p className="services__modal-info">
                     Designed User Interfaces | <strong>Figma</strong>
                   </p>
                 </li>
 
                 <li className="services__modal-service">
-                  <i className="uil uil-check-circle services__modal-icon"></i>
+                  <i className=" services__modal-icon"><FaRegCheckCircle /></i>
                   <p className="services__modal-info">
                     Designed Logos & Business Cards |{" "}
                     <strong>Illustrator</strong>
@@ -335,7 +340,7 @@ const Services = () => {
                 </li>
 
                 <li className="services__modal-service">
-                  <i className="uil uil-check-circle services__modal-icon"></i>
+                  <i className=" services__modal-icon"><FaRegCheckCircle /></i>
                   <p className="services__modal-info">
                     Designed Product Pamphlets and Covers
                   </p>

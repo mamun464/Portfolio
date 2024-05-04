@@ -1,5 +1,5 @@
 import React from "react";
-
+import { BiBadgeCheck } from "react-icons/bi";
 const Frontend = () => {
   return (
     <div className="skills__content">
@@ -8,7 +8,7 @@ const Frontend = () => {
       <div className="skills__box">
         <div className="skills__group">
           <div className="skills__data">
-            <i class="bx bx-badge-check icon__box"></i>
+            <i className="icon__box"><BiBadgeCheck /></i>
 
             <div>
               <h3 className="skills__name">HTML5</h3>
@@ -17,7 +17,7 @@ const Frontend = () => {
           </div>
 
           <div className="skills__data">
-            <i class="bx bx-badge-check icon__box"></i>
+            <i className=" icon__box"><BiBadgeCheck /></i>
 
             <div>
               <h3 className="skills__name">CSS3</h3>
@@ -26,7 +26,7 @@ const Frontend = () => {
           </div>
 
           <div className="skills__data">
-            <i class="bx bx-badge-check icon__box"></i>
+            <i className="icon__box"><BiBadgeCheck /></i>
 
             <div>
               <h3 className="skills__name">JavaScript</h3>
@@ -37,7 +37,7 @@ const Frontend = () => {
 
         <div className="skills__group">
           <div className="skills__data">
-            <i class="bx bx-badge-check icon__box"></i>
+            <i className=" icon__box"><BiBadgeCheck /></i>
 
             <div>
               <h3 className="skills__name">ReactJS</h3>
@@ -46,7 +46,7 @@ const Frontend = () => {
           </div>
 
           <div className="skills__data">
-            <i class="bx bx-badge-check icon__box"></i>
+            <i className="icon__box"><BiBadgeCheck /></i>
 
             <div>
               <h3 className="skills__name">Tailwind</h3>
@@ -55,7 +55,7 @@ const Frontend = () => {
           </div>
 
           <div className="skills__data">
-            <i class="bx bx-badge-check icon__box"></i>
+            <i className=" icon__box"><BiBadgeCheck /></i>
 
             <div>
               <h3 className="skills__name">Bootstrap/Semantic</h3>

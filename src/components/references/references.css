@@ -19,7 +19,8 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 1.5rem 2rem;
     border-radius: 1.5rem;
-    min-height: 150px;
+    min-height: 180px;
+    max-width: 460px;
     margin-bottom: var(--mb-3);
     justify-content: flex-start;
 
@@ -45,6 +46,8 @@
 .swiper-pagination-bullet-active {
     background-color: #ffb31c !important;
 }
+
+
 
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */

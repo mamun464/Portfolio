@@ -1,4 +1,4 @@
-import React from "react";
+import { RxLightningBolt } from "react-icons/rx";
 
 const SoftSkills = () => {
   return (
@@ -8,7 +8,7 @@ const SoftSkills = () => {
       <div className="skills__box">
         <div className="skills__group">
           <div className="skills__data">
-            <i class="uil uil-bolt icon__box"></i>
+            <i className=" icon__box"><RxLightningBolt /></i>
 
             <div>
               <h3 className="skills__name">Docker</h3>
@@ -17,7 +17,7 @@ const SoftSkills = () => {
           </div>
 
           <div className="skills__data">
-            <i class="uil uil-bolt icon__box"></i>
+            <i className="icon__box"><RxLightningBolt /></i>
 
             <div>
               <h3 className="skills__name">Figma</h3>
@@ -26,7 +26,7 @@ const SoftSkills = () => {
           </div>
 
           <div className="skills__data">
-            <i class="uil uil-bolt icon__box"></i>
+            <i className="icon__box"><RxLightningBolt /></i>
 
             <div>
               <h3 className="skills__name">DBeaver</h3>
@@ -37,7 +37,7 @@ const SoftSkills = () => {
 
         <div className="skills__group">
           <div className="skills__data">
-            <i class="uil uil-bolt icon__box"></i>
+            <i className="icon__box"><RxLightningBolt /></i>
 
             <div>
               <h3 className="skills__name">GitHub Desktop</h3>
@@ -46,7 +46,7 @@ const SoftSkills = () => {
           </div>
 
           <div className="skills__data">
-            <i class="uil uil-bolt icon__box"></i>
+            <i className="icon__box"><RxLightningBolt /></i>
 
             <div>
               <h3 className="skills__name">Illustrator</h3>
@@ -55,7 +55,7 @@ const SoftSkills = () => {
           </div>
 
           <div className="skills__data">
-            <i class="uil uil-bolt icon__box"></i>
+            <i className=" icon__box"><RxLightningBolt /></i>
 
             <div>
               <h3 className="skills__name">Photoshop</h3>

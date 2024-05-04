@@ -1,8 +1,10 @@
-import React, { useRef, useState } from "react";
+import { useRef, useState } from "react";
 import "./contacts.css";
 import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { MdOutlineMarkEmailRead } from "react-icons/md";
+import { FaArrowRight } from "react-icons/fa6";
 
 const Contacts = () => {
   const form = useRef();
@@ -41,16 +43,16 @@ const Contacts = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-       // Access form fields
-       const name = form.current.client_name.value;
-       const email = form.current.client_email.value;
-       const message = form.current.client_message.value;
-   
-       // Validate message
-       if (message.trim() === "" || name.trim() === "" || email.trim() === "") {
-         toast.error(`Must be fill up the form!`);
-         return;
-       }
+    // Access form fields
+    const name = form.current.client_name.value;
+    const email = form.current.client_email.value;
+    const message = form.current.client_message.value;
+
+    // Validate message
+    if (message.trim() === "" || name.trim() === "" || email.trim() === "") {
+      toast.error(`Must be fill up the form!`);
+      return;
+    }
 
     emailjs
       .sendForm(
@@ -64,7 +66,7 @@ const Contacts = () => {
           setShowSuccessPopup(true)
           console.log('SUCCESS!');
           e.target.reset();
-          
+
         },
         (error) => {
           toast.error(`FAILED: ${error.text}`)
@@ -84,7 +86,7 @@ const Contacts = () => {
 
           <div className="contact__info">
             <div className="contact__card">
-              <i className="bx bx-mail-send contact__card-icon"></i>
+              <i className="bx bx-mail-send contact__card-icon"><MdOutlineMarkEmailRead /></i>
 
               <h3 className="contact__card-title">Email</h3>
               <span className="contact__card-data">
@@ -96,7 +98,7 @@ const Contacts = () => {
                 className="contact__button"
               >
                 Write me{" "}
-                <i className="bx bx-right-arrow-alt contact__button-icon"></i>{" "}
+                <i className="bx bx-right-arrow-alt contact__button-icon"><FaArrowRight /></i>{" "}
               </a>
             </div>
 
@@ -107,12 +109,12 @@ const Contacts = () => {
               <span className="contact__card-data">mrashid.uiu</span>
               <a
                 href="https://www.messenger.com/t/mrashid.uiu/"
-                className="contact__button"
+                className="contact__button "
                 target="_blank"
                 rel="noreferrer"
               >
                 Text me{" "}
-                <i className="bx bx-right-arrow-alt contact__button-icon"></i>{" "}
+                <i className="bx bx-right-arrow-alt contact__button-icon"><FaArrowRight /></i>{" "}
               </a>
             </div>
           </div>
@@ -177,14 +179,14 @@ const Contacts = () => {
           {showSuccessPopup && (
             <div className="overlay">
               <div className="popup">
-                <p>Message successfully delivered to Mamun ! 
+                <p>Message successfully delivered to Mamun !
                   <br />
                   <span style={{ display: 'block', textAlign: 'center' }}>
-                      &amp;
+                    &amp;
                   </span>
                   He'll get back to you soon...
 
-                  </p>
+                </p>
                 <button onClick={() => setShowSuccessPopup(false)}>
                   Close
                 </button>

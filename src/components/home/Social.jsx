@@ -1,30 +1,37 @@
 import React from 'react'
+// import 'unicons/icon/css/line.css';
+import { FaGithub, FaLinkedin, FaFacebookSquare } from "react-icons/fa";
+
+
 
 const Social = () => {
   return (
-      <div className='home__social'>
-          <a
-              href="https://github.com/mamun464" className='home__social-icon'
-              target="_blank" rel="noopener noreferrer"
-          >
-            <i class="uil uil-github"></i>
-          </a>
+    <div className='home__social'>
+      <a
+        href="https://github.com/mamun464" className='home__social-icon'
+        target="_blank" rel="noopener noreferrer"
+      >
 
-          <a
-            href="https://www.linkedin.com/in/mamunur-rashid-162130/"
-            className='home__social-icon'
-            target="_blank" rel="noopener noreferrer"
-          >
-            <i class="uil uil-linkedin"></i>
-          </a>
+        <FaGithub></FaGithub>
+      </a>
 
-          <a
-              href="https://www.facebook.com/mrashid.uiu/"
-              className='home__social-icon'
-              target="_blank" rel="noopener noreferrer"
-          >
-            <i class="uil uil-facebook"></i>
-          </a>
+      <a
+        href="https://www.linkedin.com/in/mamunur-rashid-162130/"
+        className='home__social-icon'
+        target="_blank" rel="noopener noreferrer"
+      >
+        <FaLinkedin />
+
+      </a>
+
+      <a
+        href="https://www.facebook.com/mrashid.uiu/"
+        className='home__social-icon'
+        target="_blank" rel="noopener noreferrer"
+      >
+        {/* <i className="uil uil-facebook"></i> */}
+        <FaFacebookSquare />
+      </a>
     </div>
   )
 }
