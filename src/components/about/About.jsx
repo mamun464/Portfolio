@@ -19,13 +19,9 @@ const About = () => {
               {" "}
               <h2>Hello there!</h2>{" "}
             </b>{" "}
-            My name is{" "}
-            <b>
+            I've transitioned into a new role as a Software Engineer at Gigalogy Ltd., where innovation knows no bounds. My name is <b>
               <em>Md Mamunur Rashid</em>
-            </b>{" "}
-            and I am working as a Software Engineer at RedDot Digital Limited, a
-            subsidiary of Robi Axieta. I am passionate about using my technical
-            skills to create software solutions that solve real-world problems.
+            </b>{" "}, and I'm thrilled to be utilizing my technical skills to develop software solutions that tackle real-world problems.
             I have already completed <strong>80+ projects</strong>, which is <b>one click</b>{" "}
             away on my{" "}
             <a

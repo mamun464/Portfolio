@@ -63,16 +63,14 @@ const Data = () => {
         {" "}
         Software Engineer <strong> @ </strong>{" "}
       </h3>{" "}
-      <h3 className="home__subtitle2"> RedDot Digital Limited </h3>{" "}
+      <h3 className="home__subtitle2"> Gigalogy Limited </h3>{" "}
       <p className="home__description">
         {" "}
-        I am Mamunur Rashid and currently employed as a Software
-        Engineer Trainee at RedDot Digital Limited <strong>
-          (Robi Axieta)
-        </strong>{" "}
-        in Bangladesh. I have a undergrad degree in Computer Science &
-        Engineering from United International University completed in mid of
-        2021.{" "}
+        Setting sail on the exhilarating voyage of tech exploration, I, Mamunur Rashid, now stand tall as a Software Engineer at <strong>Gigalogy Ltd. </strong>, where innovation reigns supreme. Prior to this, I sharpened my skills in the dynamic domain of RedDot Digital Limited <strong>(Robi Axieta)</strong>, embracing the challenges as a Software Engineer Trainee.
+
+        Driven by curiosity, I embarked on a journey into the realms of Computer Science & Engineering at United International University. There, I honed my skills in the art of problem-solving, graduating amidst the challenges of 2021.
+
+        Step by step, I decode the mysteries of code, shaping tomorrow's world with every keystroke. Join me on this thrilling journey where each line tells a story of passion and progress.
       </p>{" "}
       <p className="home__description">
         {" "}

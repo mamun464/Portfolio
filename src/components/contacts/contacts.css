@@ -32,6 +32,8 @@
   margin-bottom: var(--mb-0-25);
 }
 
+
+
 .contact__card-title,
 .contact__card-data {
   font-size: var(small-font-size);
@@ -63,7 +65,16 @@
 
 .contact__button:hover .contact__button-icon {
   transform: translate(0.25rem);
+  font-weight: bold;
+
 }
+
+.contact__button:hover .txtBtn {
+  transform: translate(0.25rem);
+  font-weight: bold;
+  ;
+}
+
 
 .contact__form {
   width: 360px;

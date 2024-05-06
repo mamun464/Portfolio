@@ -21,6 +21,95 @@ const Services = () => {
         <div className="services__content">
           <div>
             <i className="services__icon"><IoCodeWorking /></i>
+            <h3 className="services__title">Software Engineer</h3>
+            <a
+              className="services__subtitle"
+              href="https://gigalogy.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Gigalogy Limited
+            </a>
+          </div>
+
+          <span className="services__button" onClick={() => toggleTab(4)}>
+            View More
+            <i className=" services__button-icon"><FaArrowRight /></i>
+          </span>
+
+          <div
+            className={
+              toggleState === 4
+                ? "services__modal active-modal"
+                : "services__modal"
+            }
+          >
+            <div className="services__modal-content">
+              <i
+                className="services__modal-close"
+                onClick={() => toggleTab(0)}
+              ><RxCrossCircled /></i>
+              <img className="services__modal-logo" src="/gigalogylogo.png" alt="gigalogy" />
+              <h3 className="services__modal-title">
+                Software Engineer
+              </h3>
+              <p className="services__modal-description">
+                Currently working as a Software Engineer at{" "}
+                <a
+                  href="https://gigalogy.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <b>Gigalogy Limited</b>
+                </a>
+                , Mirpur DHOS, Dhaka.
+              </p>
+
+              <ul className="services__modal-services grid">
+                <li className="services__modal-service">
+                  <i className=" services__modal-icon"><FaRegCheckCircle /></i>
+                  <p className="services__modal-info">
+                    Flask
+                  </p>
+                </li>
+
+                <li className="services__modal-service">
+                  <i className=" services__modal-icon"><FaRegCheckCircle /></i>
+                  <p className="services__modal-info">
+                    FastAPI
+                  </p>
+                </li>
+
+                <li className="services__modal-service">
+                  <i className=" services__modal-icon"><FaRegCheckCircle /></i>
+                  <p className="services__modal-info">API & RESTful API</p>
+                </li>
+
+                <li className="services__modal-service">
+                  <i className=" services__modal-icon"><FaRegCheckCircle /></i>
+                  <p className="services__modal-info">Object Relational Mapping (ORM)</p>
+                </li>
+
+
+                <li className="services__modal-service">
+                  <i className=" services__modal-icon"><FaRegCheckCircle /></i>
+                  <p className="services__modal-info">
+                    Vue.js
+                  </p>
+                </li>
+                <li className="services__modal-service">
+                  <i className=" services__modal-icon"><FaRegCheckCircle /></i>
+                  <p className="services__modal-info">
+                    JavaScript & ES-6
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div className="services__content">
+          <div>
+            <i className="services__icon"><IoCodeWorking /></i>
             <h3 className="services__title">Jr. Software Engineer</h3>
             <a
               className="services__subtitle"
@@ -49,7 +138,7 @@ const Services = () => {
                 className="services__modal-close"
                 onClick={() => toggleTab(0)}
               ><RxCrossCircled /></i>
-
+              <img className="services__modal-logo" src="/RedDot-Logo-red.png" alt="RedDotLogo" />
               <h3 className="services__modal-title">
                 Software Engineer Trainee
               </h3>
@@ -140,7 +229,7 @@ const Services = () => {
                 className="services__modal-close"
                 onClick={() => toggleTab(0)}
               ><RxCrossCircled /></i>
-
+              <img className="services__modal-logo" src="/TCL_Logo.png" alt="TCLLogo" />
               <h3 className="services__modal-title">Project Implementation Officer</h3>
               <p className="services__modal-description">
                 I was associated with the government RAJUK project which was developed & maintained by{" "}
@@ -234,7 +323,7 @@ const Services = () => {
                 className=" services__modal-close"
                 onClick={() => toggleTab(0)}
               ><RxCrossCircled /></i>
-
+              <img className="services__modal-logo" src="/uiu.png" alt="UIULogo" />
               <h3 className="services__modal-title">
                 Undergraduate Teaching Assistant
               </h3>

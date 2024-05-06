@@ -1,5 +1,5 @@
 .services__container {
-  grid-template-columns: repeat(3, 270px);
+  grid-template-columns: repeat(4, 270px);
   justify-content: center;
   column-gap: 1.8rem;
 }
@@ -87,12 +87,17 @@
 }
 
 .services__modal-close:hover {
-  color: #303234;
+  color: red;
 }
 
 .services__modal-title,
 .services__modal-description {
   text-align: center;
+}
+
+.services__modal-logo {
+  width: 35%;
+  margin-bottom: 20px;
 }
 
 .services__modal-title {

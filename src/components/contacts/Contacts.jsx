@@ -76,6 +76,10 @@ const Contacts = () => {
       );
   };
 
+
+
+
+
   return (
     <section className="contacts section" id="contacts">
       <h2 className="section__title">Contact Details</h2>
@@ -86,8 +90,8 @@ const Contacts = () => {
           <h3 className="contact__title">Talk to me</h3>
 
           <div className="contact__info">
-            <div className="contact__card">
-              <i className="bx bx-mail-send contact__card-icon"><MdOutlineMarkEmailRead /></i>
+            <div className="contact__card" id="emailContact">
+              <i id="emailContactIcon" className="bx bx-mail-send contact__card-icon"><MdOutlineMarkEmailRead /></i>
 
               <h3 className="contact__card-title">Email</h3>
               <span className="contact__card-data">
@@ -98,14 +102,13 @@ const Contacts = () => {
                 href="mailto:mrashid.uiu.cse@gmail.com"
                 className="contact__button"
               >
-                Write me{" "}
+                <span className="txtBtn">Write me</span>{" "}
                 <i className="bx bx-right-arrow-alt contact__button-icon"><FaArrowRight /></i>{" "}
               </a>
             </div>
 
             <div className="contact__card" id="messengerContact">
-              <i className="bx bxl-messenger contact__card-icon"><FaFacebookMessenger />  </i>
-
+              <i id="messengerIcon" className="contact__card-icon"><FaFacebookMessenger /></i>
               <h3 className="contact__card-title">Messenger</h3>
               <span className="contact__card-data">mrashid.uiu</span>
               <a
@@ -114,10 +117,11 @@ const Contacts = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                Text me{" "}
+                <span className="txtBtn">Text me</span>{" "}
                 <i className="bx bx-right-arrow-alt contact__button-icon"><FaArrowRight /></i>{" "}
               </a>
             </div>
+
           </div>
         </div>
 
@@ -159,7 +163,7 @@ const Contacts = () => {
             <button className="button button--flex">
               Send Message!
               <svg
-                class="button__icon"
+                className="button__icon"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
